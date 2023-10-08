@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
+   <meta name="author" content="Johnny Hellström">
+
+   <link rel="icon" href="images/barbecue_mashmallows.jpg">
+   <link rel="stylesheet" href="../../css/reset.css">
+   <link rel="stylesheet" href="../../css/main.css">
+   <script type="module" src="../../js/main.js"></script>
+   <script type="module" src="../../js/msb/brandrisk.js"></script>
+
+   <title>Äta i Skogen</title>
+
+</head>
+
+<body>
+   <header>
+      <a href="../../index.html">
+         <img src="../../images/barbecue_mashmallows.jpg" alt="Mashmallows grillade över öppen eld" width="100">
+      </a>
+      <h1>ÄTA I SKOGEN</h1>
+      <img src="../../images/hamburger-menu-svgrepo-com.svg" alt="Navigeringsmeny" width="10">
+   </header>
+   
+   <nav>
+      <ul>
+         <li><a href="../../index.html">Startsida</a></li>
+         <li><a href="../recept/lista.html">Recept</a></li>
+         <li class="active"><a href="idag.html">Brandrisk</a></li>
+         <li><a href="../gora-upp-eld.html">Göra upp eld</a></li>
+         <li><a href="../om-mig.html">Om mig</a></li>
+         <li><a href="../kontakt.html">Kontakt</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <div id="wrapperBrandrisk">
+         <div id="msbData">
+            <h2>Läget där du befinner dig</h2>
+            <p>Data ej tillgänglig just nu</p>
+         </div>
+ 
+         <div id="msbSearchedData">
+            <section>         
+               <header>
+                  <h2>Sök en specifik location</h2>
+                  <p>Fyll i koordinaterna nedan</p>
+               </header>
+               <form method="post" onsubmit="return false;">
+                  <p>
+                     <label for="lat">Latitud:</label>
+                     <input type="text" id="lat" name="lat" required >
+                  </p>
+                  <p>
+                     <label for="lon">Longitud:</label>
+                     <input type="text" id="lon" name="lon" required >
+                  </p>
+                  <p>
+                     <button type="submit">Sök</button>
+                  </p>   
+               </form>          
+            </section>
+         </div>
+      </div>
+   </main>  
+   
+   <footer>
+      <section>
+         <h2>Address</h2>
+            <address>Stora Grågåsvattnet <br> 451 94 Uddevalla </address>
+      </section>
+      <section id="socialMedia">
+         <h2>Social Media</h2>
+         <ul>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../../images/logo-twitter.svg"
+                     alt="twitter logo"></a></li>
+            <li><a href="https://facebook.com/" target="_blank"><img src="../../images/logo-facebook.svg"
+                     alt="facebook logo"></a></li>
+            <li><a href="https://instagram.com/" target="_blank"><img src="../../images/logo-instagram.svg"
+                     alt="instagram logo"></a></li>
+         </ul>
+      </section>
+   </footer>
+   <hr>
+   <div id="copyright">
+         <p>&copy; Äta i skogen</p>
+         <p>Design: HTML5 UP</p>
+         <p>Images from <a href="https://unsplash.com">unsplash</a></p>
+   </div> 
+</body>
+
+</html>

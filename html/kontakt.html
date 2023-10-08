@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
+   <meta name="author" content="Johnny Hellström">
+
+   <link rel="icon" href="images/barbecue_mashmallows.jpg">
+   <link rel="stylesheet" href="../../css/reset.css">
+   <link rel="stylesheet" href="../../css/main.css">
+   <script type="module" src="../js/main.js"></script>
+
+   <title>Äta i Skogen</title>
+
+</head>
+
+<body>
+   <header>
+      <a href="../../index.html">
+         <img src="../../images/barbecue_mashmallows.jpg" alt="Mashmallows grillade över öppen eld" width="100">
+      </a>
+      <h1>ÄTA I SKOGEN</h1>
+      <img id="menu" src="../images/hamburger-menu-svgrepo-com.svg" alt="Navigeringsmeny" width="10">
+   </header>
+
+   <nav>
+      <ul>
+         <li><a href="../../index.html">Startsida</a></li>
+         <li><a href="recept/lista.html">Recept</a></li>
+         <li><a href="brandrisk/idag.html">Brandrisk</a></li>
+         <li><a href="gora-upp-eld.html">Göra upp eld</a></li>
+         <li><a href="om-mig.html">Om mig</a></li>
+         <li class="active"><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <section id="contact">
+         <header>
+            <h2>Kontakt</h2>
+            <p>
+               Har du frågor, undringar eller kommentarer skicka gärna ett meddelande.
+            </p>
+
+         </header>
+         <form action="thanks.html" method="get">
+            <p>
+               <label for="name">Namn*:</label>
+               <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+               <label for="email">Epost*:</label>
+               <input type="email" id="email" name="email" required pattern="\w+@\w+.+\w">
+            </p>
+            <p>
+               <label for="phone">Telefon:</label>
+               <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </p>
+            <p>
+               <label for="subject">Ämne*:</label>
+               <input type="text" id="subject" name="subject" required>
+            </p>
+            <p>
+               <label for="comments">Meddelande*:</label>
+               <textarea name="comments" id="comments"  rows="8" required></textarea>
+            </p>
+            <p>
+               <button type="submit">Skicka</button>
+               <button type="reset">Rensa</button>
+            </p>        
+         </form>
+
+      </section>
+   </main>
+
+   <footer>
+      <section>
+         <h2>Address</h2>
+            <address>Stora Grågåsvattnet <br> 451 94 Uddevalla </address>
+      </section>
+      <section id="socialMedia">
+         <h2>Social Media</h2>
+         <ul>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../images/logo-twitter.svg"
+                     alt="twitter logo"></a></li>
+            <li><a href="https://facebook.com/" target="_blank"><img src="../images/logo-facebook.svg"
+                     alt="facebook logo"></a></li>
+            <li><a href="https://instagram.com/" target="_blank"><img src="../images/logo-instagram.svg"
+                     alt="instagram logo"></a></li>
+         </ul>
+      </section>
+   </footer>
+   <hr>
+   <div id="copyright">
+         <p>&copy; Äta i skogen</p>
+         <p>Design: HTML5 UP</p>
+         <p>Images from <a href="https://unsplash.com">unsplash</a></p>
+   </div> 
+</body>
+
+</html>
